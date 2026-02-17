@@ -1,0 +1,114 @@
+/* Additional Mobile Responsive Fixes */
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .workflow-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .workflow-card {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 920px) {
+  .company-section {
+    flex-direction: column;
+    gap: 48px;
+    padding: 50px 30px;
+    align-items: stretch;
+  }
+  
+  .company-content {
+    order: 1;
+  }
+  
+  .company-image {
+    max-width: 100%;
+    height: 350px;
+    order: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .company-section {
+    gap: 32px;
+    padding: 40px 30px;
+  }
+  
+  .company-content {
+    gap: 14px;
+  }
+  
+  .company-image {
+    height: 280px;
+  }
+  
+  .company-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  
+  .company-content h2 {
+    font-size: clamp(26px, 7vw, 32px);
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+  
+  .watchword {
+    font-size: 16px;
+    margin: 12px 0;
+  }
+  
+  .ceo-signature {
+    margin: 12px 0;
+  }
+  
+  .company-content button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-section {
+    gap: 24px;
+    padding: 30px 30px;
+  }
+  
+  .company-content h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  
+  .company-content p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .watchword {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .company-image {
+    height: 240px;
+  }
+  
+  .ceo-signature {
+    margin: 10px 0;
+  }
+}

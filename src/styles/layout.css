@@ -1,0 +1,94 @@
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.bg-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.bg-grid {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.04) 1px,
+      rgba(255, 255, 255, 0) 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, rgba(255, 255, 255, 0) 1px);
+  background-size: 180px 180px, 180px 180px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+}
+
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.3), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(34, 197, 94, 0.25), transparent 30%),
+    radial-gradient(circle at 70% 75%, rgba(24, 44, 73, 0.8), transparent 45%);
+  filter: blur(20px);
+  opacity: 0.9;
+}
+
+.bg-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.08), transparent 32%),
+    radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.06), transparent 30%);
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 0 0 120px;
+}
+
+@media (max-width: 920px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .main {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .panel-header-center {
+    margin-bottom: 32px;
+  }
+
+  .company-section {
+    grid-template-columns: 1fr;
+  }
+
+  .company-image {
+    height: 300px;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .main {
+    gap: 50px;
+    padding: 110px 0 80px;
+  }
+}

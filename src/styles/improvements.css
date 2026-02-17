@@ -1,0 +1,44 @@
+/* Global Design Improvements */
+
+/* Ensure consistent spacing and alignment */
+* {
+  box-sizing: border-box;
+}
+
+/* Improve text readability */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-weight: 600;
+}
+
+/* Contact card improvements */
+.contact-card svg {
+  color: rgba(34, 197, 94, 1);
+}
+
+.contact-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.contact-value {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Responsive improvements for all grids */
+@media (max-width: 640px) {
+  .projects-grid,
+  .blog-grid,
+  .contact-methods {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .newsletter-form-container {
+    grid-template-columns: 1fr !important;
+  }
+}

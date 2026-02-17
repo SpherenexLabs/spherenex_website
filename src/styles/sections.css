@@ -1,0 +1,691 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.panel-header-center {
+  text-align: center;
+  margin: 0 auto 48px;
+  max-width: 800px;
+}
+
+.panel-header-center h2 {
+  margin-bottom: 16px;
+}
+
+.panel-header-center .subtitle {
+  margin-top: 0;
+}
+
+.panel-copy {
+  max-width: 420px;
+  color: var(--text-muted);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 12, 22, 0.7);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-icon {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(34, 197, 94, 0.25);
+  border-color: #22c55e;
+}
+
+.card h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+.card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateX(4px);
+}
+
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+.chip.muted {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.tag {
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Why Choose Us Section */
+.why-us-section {
+  /* padding: 100px 0; */
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.benefit-card {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: #22c55e;
+  transform: translateY(-2px);
+}
+
+.benefit-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.benefit-content h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.benefit-content p {
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Workflow Section */
+.workflow-section {
+  /* padding: 100px 0; */
+  background: linear-gradient(180deg, transparent 0%, rgba(34, 197, 94, 0.03) 100%);
+}
+
+.workflow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workflow-card {
+  text-align: center;
+  padding: 40px 24px;
+  flex: 0 1 calc(33.333% - 20px);
+  min-width: 260px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.workflow-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: #22c55e;
+  transform: translateY(-4px);
+}
+
+.workflow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 2px solid #22c55e;
+  border-radius: 50%;
+  color: #22c55e;
+}
+
+.workflow-card h3 {
+  font-size: 20px;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.workflow-card p {
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(7, 12, 22, 0.6) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.cta-description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 40px 0;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.contact-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  margin: 0 0 16px 0;
+  color: white;
+}
+
+.contact-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 32px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card svg {
+  color: var(--accent);
+}
+
+.contact-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-subtle);
+}
+
+.contact-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 920px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .workflow-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .company-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .company-content {
+    order: 1;
+  }
+  
+  .company-image {
+    height: 300px;
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .company-content h2 {
+    font-size: clamp(28px, 7vw, 36px);
+  }
+  
+  .watchword {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel, .why-us-section, .workflow-section, .contact-section {
+    padding: 60px 0;
+  }
+  
+  .cta-section {
+    padding: 80px 0;
+  }
+  
+  .panel-header-center {
+    padding: 0 16px;
+  }
+  
+  .panel-header-center h2 {
+    font-size: clamp(28px, 7vw, 36px);
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+  
+  .card {
+    padding: 20px 18px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+  }
+  
+  .benefit-card {
+    padding: 20px;
+    gap: 16px;
+  }
+  
+  .workflow-card {
+    padding: 32px 20px;
+  }
+  
+  .workflow-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .cta-content h2 {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+  
+  .cta-description {
+    font-size: 16px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-buttons button {
+    width: 100%;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-card {
+    padding: 36px 24px;
+  }
+  
+  .company-content h2 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.advantage {
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.advantage h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.advantage p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.advantage-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(18, 138, 150, 0.9), rgba(14, 72, 92, 0.9));
+  box-shadow: 0 10px 30px rgba(18, 138, 150, 0.35);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.process-card {
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.03), rgba(7, 12, 22, 0.8));
+  text-align: center;
+}
+
+.process-card h5 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.process-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.company-section {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.company-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.company-content h2 {
+  margin: 0;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.company-content p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.watchword {
+  font-size: 19px;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.watchword strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ceo-signature {
+  margin: 20px 0;
+}
+
+.ceo-name {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.company-name {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+}
+
+.company-image {
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.company-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(18, 138, 150, 0.2), rgba(7, 12, 22, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.timeline-step {
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  display: grid;
+  gap: 8px;
+}
+
+.timeline-index {
+  font-family: var(--mono-font);
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.timeline p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.case {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(7, 12, 22, 0.9));
+  display: grid;
+  gap: 8px;
+}
+
+.case-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.metric-pill {
+  padding: 6px 10px;
+  background: rgba(18, 138, 150, 0.16);
+  color: var(--accent);
+  border-radius: 999px;
+  border: 1px solid rgba(18, 138, 150, 0.4);
+  font-weight: 600;
+}
+
+.case p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.cta {
+  padding: 48px 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at 20% 30%, rgba(18, 138, 150, 0.18), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(180, 111, 44, 0.18), transparent 25%), rgba(7, 12, 22, 0.85);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.cta h3 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.cta .lede {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

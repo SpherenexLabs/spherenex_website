@@ -1,0 +1,345 @@
+/* Legal Pages (Terms & Privacy) */
+.legal-page-container {
+  min-height: 100vh;
+  background: #0a0a0a;
+  padding: 140px 0 80px;
+}
+
+.legal-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.legal-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.legal-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legal-updated {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.legal-subtitle {
+  font-size: 0.9rem;
+  color: rgba(34, 197, 94, 0.9);
+  font-style: italic;
+}
+
+.legal-section {
+  margin-bottom: 40px;
+}
+
+.legal-section h2 {
+  font-size: 1.8rem;
+  color: #22c55e;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.legal-section h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 24px;
+}
+
+.legal-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.legal-section ul {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.legal-section li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info strong {
+  color: #22c55e;
+}
+
+.contact-info em {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.acknowledgment {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid #22c55e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.acknowledgment strong {
+  color: #22c55e;
+  font-size: 1rem;
+}
+
+/* Support Page */
+.support-page-container {
+  min-height: 100vh;
+  background: #0a0a0a;
+  padding: 140px 0 80px;
+}
+
+.support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.support-page-title {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.support-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Support Info Section */
+.support-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.support-info-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.support-info-card:hover {
+  border-color: #22c55e;
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.1);
+}
+
+.support-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  margin-bottom: 16px;
+}
+
+.support-info-title {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.support-info-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.support-info-text a {
+  color: #22c55e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.support-info-text a:hover {
+  color: #16a34a;
+}
+
+/* Support Form Section */
+.support-form-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.support-success-message {
+  display: flex;
+  align-items: center;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid #22c55e;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #22c55e;
+  font-size: 0.95rem;
+}
+
+.support-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.support-form-group {
+  margin-bottom: 20px;
+}
+
+.support-form-label {
+  display: block;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.support-form-input,
+.support-form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.support-form-input:focus,
+.support-form-textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.support-form-input::placeholder,
+.support-form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.support-form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.support-submit-button {
+  width: 100%;
+  padding: 16px 32px;
+  background: #22c55e;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.support-submit-button:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+}
+
+.support-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Map Section */
+.support-map-section {
+  width: 100%;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.support-map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .support-content-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .support-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-title,
+  .support-page-title {
+    font-size: 2.5rem;
+  }
+
+  .legal-page-container,
+  .support-page-container {
+    padding: 120px 0 60px;
+  }
+
+  .legal-info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legal-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .support-form-section {
+    padding: 24px;
+  }
+
+  .support-map-section {
+    height: 350px;
+  }
+}

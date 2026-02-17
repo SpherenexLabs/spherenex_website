@@ -1,0 +1,46 @@
+button,
+a.solid,
+a.ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.solid {
+  background: rgba(34, 197, 94, 1);
+  border-color: rgba(34, 197, 94, 1);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.35);
+}
+
+.solid:hover {
+  background: rgba(34, 197, 94, 0.9);
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.45);
+}
+
+.ghost {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.large {
+  padding: 14px 32px;
+  font-size: 16px;
+}

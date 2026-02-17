@@ -60,6 +60,11 @@ function Footer() {
           </a>
         </div>
       </div>
+      
+      <div className="footer-copyright">
+        <p>© 2025 Spherenex A Unit of NexSpyder Technologies Pvt. Ltd.</p>
+        <p>All rights reserved.</p>
+      </div>
     </footer>
   )
 }

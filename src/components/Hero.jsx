@@ -1,10 +1,21 @@
 import '../styles/hero.css'
 import heroVideo from '../assets/robo1.mp4'
+import heroPoster from '../assets/images/banner.png'
 
 function Hero() {
   return (
     <section className="hero" id="hero">
-      <video className="hero-bg-video" src={heroVideo} autoPlay muted loop playsInline aria-label="Spherenex smart technology in action" />
+      <video
+        className="hero-bg-video"
+        src={heroVideo}
+        poster={heroPoster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label="Spherenex smart technology in action"
+      />
       <div className="hero-overlay" />
       <div className="hero-content container">
         <div className="hero-copy">

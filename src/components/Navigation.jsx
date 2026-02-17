@@ -13,9 +13,9 @@ function Navigation() {
   return (
     <header className="nav" role="banner">
       <div className="nav-container">
-        <div className="brand">
+        <a className="brand" href="/" onClick={() => setIsMenuOpen(false)}>
           <img src={logo} alt="Spherenex Smart Technology" className="brand-logo" loading="eager" fetchPriority="high" />
-        </div>
+        </a>
         
         <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}

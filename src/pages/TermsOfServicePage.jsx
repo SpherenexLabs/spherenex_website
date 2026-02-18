@@ -22,7 +22,7 @@ function TermsOfServicePage() {
           <section className="legal-section">
             <h2>1. Agreement to Terms</h2>
             <p>
-              Welcome to Spherenex Technologies Pvt. Ltd., a unit of NexSpyder Technologies Pvt. Ltd. ("Spherenex," "we," "us," or "our"). 
+              Welcome to Spherenex, a unit of NexSpyder Technologies Pvt. Ltd. ("Spherenex," "we," "us," or "our"). 
               These Terms of Service ("Terms") govern your access to and use of our website, platforms, 
               AI-powered solutions, IoT systems, and related services (collectively, the "Services"). 
               By accessing or using our Services, you agree to be bound by these Terms. If you do not 
@@ -282,9 +282,9 @@ function TermsOfServicePage() {
               If you have questions or concerns about these Terms of Service, please contact us:
             </p>
             <div className="contact-info">
-              <p><strong>Spherenex Technologies Pvt. Ltd.</strong></p>
+              <p><strong>Spherenex </strong></p>
               <p><em>A unit of NexSpyder Technologies Pvt. Ltd.</em></p>
-              <p>Email: info@spherenex.com</p>
+              <p>Email: connects@spherenex.com</p>
               <p>Phone: +91 88619 38913</p>
               <p>Address: 48/58, 1st floor, Chunchghatta Main Rd, JP Nagar 7th Phase, Konanakunte, Bangalore, Karnataka - 560062</p>
             </div>

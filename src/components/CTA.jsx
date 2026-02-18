@@ -9,10 +9,10 @@ function CTA() {
         <p>Get in touch with our team to discuss your smart technology needs</p>
       </div>
       <div className="contact-methods">
-        <a href="mailto:projects@spherenex.com" className="contact-card">
+        <a href="mailto:connects@spherenex.com" className="contact-card">
           <Mail size={32} />
           <span className="contact-label">Email Us</span>
-          <span className="contact-value">projects@spherenex.com</span>
+          <span className="contact-value">connects@spherenex.com</span>
         </a>
       </div>
     </section>

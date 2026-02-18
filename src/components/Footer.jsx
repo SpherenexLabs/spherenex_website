@@ -46,15 +46,15 @@ function Footer() {
           <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
                 <div className="footer-contact">
-          <a href="mailto:projects@spherenex.com" className="footer-link">
+          <a href="mailto:connects@spherenex.com" className="footer-link">
             <Mail size={18} />
-            projects@spherenex.com
+            connects@spherenex.com
           </a>
           {/* <a href="tel:+918861938913" className="footer-link">
             <Phone size={18} />
             +91 8861938913
           </a> */}
-          <a className="ghost" href="mailto:projects@spherenex.com?subject=Spherenex%20Deck%20Request">
+          <a className="ghost" href="mailto:connects@spherenex.com?subject=Spherenex%20Deck%20Request">
             <Download size={18} />
             Download deck
           </a>

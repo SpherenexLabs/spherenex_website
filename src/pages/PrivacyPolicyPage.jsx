@@ -22,7 +22,7 @@ function PrivacyPolicyPage() {
           <section className="legal-section">
             <h2>1. Introduction</h2>
             <p>
-              Welcome to Spherenex Technologies Pvt. Ltd., a unit of NexSpyder Technologies Pvt. Ltd. ("Spherenex," "we," "us," or "our"). 
+              Welcome to Spherenex, a unit of NexSpyder Technologies Pvt. Ltd. ("Spherenex," "we," "us," or "our"). 
               We are committed to protecting your privacy and ensuring the security of your personal information. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you 
               visit our website, use our services, or interact with our AI-powered platforms and solutions.
@@ -195,9 +195,9 @@ function PrivacyPolicyPage() {
               please contact us:
             </p>
             <div className="contact-info">
-              <p><strong>Spherenex Technologies Pvt. Ltd.</strong></p>
+              <p><strong>Spherenex </strong></p>
               <p><em>A unit of NexSpyder Technologies Pvt. Ltd.</em></p>
-              <p>Email: info@spherenex.com</p>
+              <p>Email: connects@spherenex.com</p>
               <p>Phone: +91 88619 38913</p>
               <p>Address: 48/58, 1st floor, Chunchghatta Main Rd, JP Nagar 7th Phase, Konanakunte, Bangalore, Karnataka - 560062</p>
             </div>

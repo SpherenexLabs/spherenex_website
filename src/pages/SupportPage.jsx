@@ -109,7 +109,7 @@ function SupportPage() {
                   <a href="mailto:tanush.bd@spherenex.com">tanush.bd@spherenex.com</a>
                 </p>
                 <p className="support-info-text">
-                  <a href="mailto:info@spherenex.com">info@spherenex.com</a>
+                  <a href="mailto:connects@spherenex.com">connects@spherenex.com</a>
                 </p>
               </div>
 

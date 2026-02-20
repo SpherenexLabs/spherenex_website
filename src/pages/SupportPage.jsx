@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
-import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, CheckCircle, Upload, X } from 'lucide-react'
 
 function SupportPage() {
   useEffect(() => {
@@ -15,6 +15,9 @@ function SupportPage() {
     message: ''
   })
 
+  const [files, setFiles] = useState([])
+  const [isDragging, setIsDragging] = useState(false)
+
   const [submitted, setSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -24,6 +27,53 @@ function SupportPage() {
       ...formData,
       [name]: value
     })
+  }
+
+  const handleFileSelect = (e) => {
+    const selectedFiles = Array.from(e.target.files)
+    addFiles(selectedFiles)
+  }
+
+  const addFiles = (newFiles) => {
+    const validFiles = newFiles.filter(file => {
+      const maxSize = 10 * 1024 * 1024 // 10MB
+      if (file.size > maxSize) {
+        alert(`${file.name} is too large. Maximum file size is 10MB.`)
+        return false
+      }
+      return true
+    })
+    setFiles(prev => [...prev, ...validFiles])
+  }
+
+  const removeFile = (index) => {
+    setFiles(prev => prev.filter((_, i) => i !== index))
+  }
+
+  const handleDragEnter = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(true)
+  }
+
+  const handleDragLeave = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+  }
+
+  const handleDragOver = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+  }
+
+  const handleDrop = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+    
+    const droppedFiles = Array.from(e.dataTransfer.files)
+    addFiles(droppedFiles)
   }
 
   const handleSubmit = async (e) => {
@@ -39,6 +89,7 @@ function SupportPage() {
     try {
       // Simulate form submission (replace with actual backend call)
       console.log('Support form submitted:', formData)
+      console.log('Attached files:', files)
       
       // Show success message
       setSubmitted(true)
@@ -50,6 +101,7 @@ function SupportPage() {
         subject: '',
         message: ''
       })
+      setFiles([])
 
       // Hide success message after 5 seconds
       setTimeout(() => {
@@ -109,7 +161,7 @@ function SupportPage() {
                   <a href="mailto:tanush.bd@spherenex.com">tanush.bd@spherenex.com</a>
                 </p>
                 <p className="support-info-text">
-                  <a href="mailto:connects@spherenex.com">connects@spherenex.com</a>
+                  <a href="mailto:connect@spherenex.com">connect@spherenex.com</a>
                 </p>
               </div>
 
@@ -119,9 +171,9 @@ function SupportPage() {
                   <Clock size={28} />
                 </div>
                 <h3 className="support-info-title">Support Hours</h3>
-                <p className="support-info-text">Monday - Friday</p>
-                <p className="support-info-text">9:00 AM - 05:00 PM</p>
-                <p className="support-info-text">Saturday - Sunday: Closed</p>
+                <p className="support-info-text">Monday - Saturday</p>
+                <p className="support-info-text">9:00 AM - 06:00 PM</p>
+                <p className="support-info-text">Sunday: Closed</p>
               </div>
             </div>
 
@@ -186,6 +238,47 @@ function SupportPage() {
                     className="support-form-textarea"
                     required
                   ></textarea>
+                </div>
+
+                <div className="support-form-group">
+                  <label className="support-form-label">Attachments (Optional)</label>
+                  <div 
+                    className={`support-file-upload ${isDragging ? 'dragging' : ''}`}
+                    onDragEnter={handleDragEnter}
+                    onDragOver={handleDragOver}
+                    onDragLeave={handleDragLeave}
+                    onDrop={handleDrop}
+                  >
+                    <Upload size={32} />
+                    <p>Drag and drop files here or click to browse</p>
+                    <p className="file-upload-hint">Maximum file size: 10MB</p>
+                    <input 
+                      type="file" 
+                      multiple 
+                      onChange={handleFileSelect}
+                      className="file-input-hidden"
+                      accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png,.zip"
+                    />
+                  </div>
+                  
+                  {files.length > 0 && (
+                    <div className="support-file-list">
+                      {files.map((file, index) => (
+                        <div key={index} className="support-file-item">
+                          <span className="file-name">{file.name}</span>
+                          <span className="file-size">({(file.size / 1024).toFixed(2)} KB)</span>
+                          <button 
+                            type="button" 
+                            onClick={() => removeFile(index)}
+                            className="file-remove-btn"
+                            aria-label="Remove file"
+                          >
+                            <X size={16} />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <button type="submit" className="support-submit-button" disabled={isSubmitting}>

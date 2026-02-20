@@ -28,7 +28,7 @@ function Navigation() {
             <a href="/#services" onClick={() => setIsMenuOpen(false)}>Expertise</a>
             <a href="/#get-started" onClick={() => setIsMenuOpen(false)}>Case studies</a>
           </nav>
-          <a className="solid" href="/#contact" onClick={() => setIsMenuOpen(false)}>
+          <a className="solid" href="/support" onClick={() => setIsMenuOpen(false)}>
             Contact
           </a>
         </div>

@@ -104,7 +104,7 @@ function WorkPage() {
         <div className="container">
           <h2>Ready to Start Your Project?</h2>
           <p>Let's discuss how we can bring your smart technology vision to life.</p>
-          <a href="/#contact" className="solid large">Contact Us</a>
+          <a href="/support" className="solid large">Contact Us</a>
         </div>
       </section>
 

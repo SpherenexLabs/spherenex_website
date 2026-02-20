@@ -8,6 +8,19 @@ export const services = [
     link: '/services/robotic-design',
     image: 'robotics.jpg',
     detailedDescription: 'Our design services transform your vision into detailed technical specifications. We start by analyzing your business requirements and operational constraints, then develop a comprehensive system architecture that balances performance, cost, and manufacturability. Our team handles everything from mechanical CAD and motion analysis to electrical system design and control architecture, ensuring all subsystems work together seamlessly. We deliver complete design packages ready for prototyping and production.',
+    processFlow: [
+      { step: 'Requirements Analysis', description: 'Understanding business needs, constraints, and technical requirements', duration: '1-2 weeks' },
+      { step: 'System Architecture', description: 'Defining overall system structure, interfaces, and subsystem interactions', duration: '2-3 weeks' },
+      { step: 'Detailed Design', description: 'Creating CAD models, schematics, and technical specifications', duration: '4-6 weeks' },
+      { step: 'Design Validation', description: 'FEA, simulation, and design review with stakeholders', duration: '1-2 weeks' },
+      { step: 'Documentation', description: 'Complete design packages with drawings, BOMs, and specifications', duration: '1 week' },
+    ],
+    stats: [
+      { label: 'Projects Completed', value: '50+' },
+      { label: 'Average Time Saved', value: '30%' },
+      { label: 'Success Rate', value: '95%' },
+      { label: 'Client Satisfaction', value: '4.8/5' },
+    ],
     keyFeatures: [
       { title: 'Complete System Architecture', detail: 'End-to-end design covering mechanical, electrical, and software layers with clear interfaces and specifications.' },
       { title: 'Risk Assessment & Mitigation', detail: 'Comprehensive FMEA analysis identifying potential failure modes and designing robust solutions from day one.' },
@@ -40,6 +53,19 @@ export const services = [
     link: '/services/hardware-engineering',
     image: 'expertise.png',
     detailedDescription: 'We deliver production-ready electronic hardware that powers your smart technology systems. Our engineers specialize in mixed-signal design, power electronics, motor control, and high-speed digital interfaces. From initial schematic capture through PCB layout and validation testing, we ensure signal integrity, thermal management, and EMC compliance. We work closely with mechanical and software teams to optimize integration and reduce time-to-market.',
+    processFlow: [
+      { step: 'Requirements & Specs', description: 'Define electrical requirements, interfaces, and performance targets', duration: '1 week' },
+      { step: 'Schematic Design', description: 'Circuit design, component selection, and power analysis', duration: '2-3 weeks' },
+      { step: 'PCB Layout', description: 'Multi-layer board design with signal integrity optimization', duration: '2-3 weeks' },
+      { step: 'Prototype & Testing', description: 'Board bring-up, functional testing, and validation', duration: '2-4 weeks' },
+      { step: 'Production Release', description: 'Manufacturing documentation and DFM optimization', duration: '1 week' },
+    ],
+    stats: [
+      { label: 'PCB Designs', value: '200+' },
+      { label: 'First-Pass Success', value: '88%' },
+      { label: 'Power Efficiency', value: '92%' },
+      { label: 'EMC Compliance', value: '100%' },
+    ],
     keyFeatures: [
       { title: 'Custom PCB Design', detail: 'Multi-layer boards with controlled impedance, advanced routing, and thermal management for reliable operation.' },
       { title: 'Power System Engineering', detail: 'Efficient power distribution, battery management, motor drives, and protection circuits tailored to your application.' },
@@ -72,6 +98,19 @@ export const services = [
     link: '/services/software-development',
     image: 'image1.jpg',
     detailedDescription: 'Our software engineers create the intelligence that drives your smart systems. We develop embedded firmware for microcontrollers, real-time control algorithms, communication protocols, and application software for user interfaces and cloud connectivity. Our code is optimized for performance, reliability, and maintainability, with comprehensive testing and documentation. We support the full software lifecycle from initial development through OTA updates and ongoing optimization.',
+    processFlow: [
+      { step: 'Architecture Design', description: 'Define software architecture, interfaces, and module structure', duration: '1-2 weeks' },
+      { step: 'Core Development', description: 'Implement firmware, drivers, and control algorithms', duration: '4-8 weeks' },
+      { step: 'Integration Testing', description: 'Hardware-software integration and system validation', duration: '2-3 weeks' },
+      { step: 'Optimization', description: 'Performance tuning, memory optimization, and debugging', duration: '1-2 weeks' },
+      { step: 'Deployment', description: 'Production firmware release with OTA update capability', duration: '1 week' },
+    ],
+    stats: [
+      { label: 'Code Quality', value: '98%' },
+      { label: 'Test Coverage', value: '85%' },
+      { label: 'Bug Resolution', value: '<24h' },
+      { label: 'Uptime', value: '99.8%' },
+    ],
     keyFeatures: [
       { title: 'Embedded Firmware', detail: 'Optimized C/C++ code for microcontrollers with real-time operating systems, device drivers, and peripheral management.' },
       { title: 'Control Algorithms', detail: 'Advanced motion control, PID tuning, trajectory planning, and sensor fusion for precise system behavior.' },
@@ -104,6 +143,19 @@ export const services = [
     link: '/services/prototyping-services',
     image: 'about.png',
     detailedDescription: 'Prototyping is where ideas meet reality. We build functional prototypes that allow you to test assumptions, gather user feedback, and validate technical approaches before committing to production tooling. Our rapid iteration process combines 3D printing, CNC machining, hand-assembly PCBs, and alpha firmware to create working systems quickly. Each prototype cycle generates valuable data that informs design refinements, reducing risk and accelerating your path to market.',
+    processFlow: [
+      { step: 'Concept Validation', description: 'Build proof-of-concept to test core assumptions', duration: '1-2 weeks' },
+      { step: 'Alpha Prototype', description: 'First functional prototype with basic features', duration: '2-4 weeks' },
+      { step: 'Beta Prototype', description: 'Refined prototype with full feature set for testing', duration: '3-5 weeks' },
+      { step: 'User Testing', description: 'Real-world testing and feedback collection', duration: '1-2 weeks' },
+      { step: 'Final Iteration', description: 'Production-ready prototype incorporating all learnings', duration: '2-3 weeks' },
+    ],
+    stats: [
+      { label: 'Prototypes Built', value: '300+' },
+      { label: 'Iteration Speed', value: '2 weeks' },
+      { label: 'Cost Reduction', value: '40%' },
+      { label: 'Success Rate', value: '92%' },
+    ],
     keyFeatures: [
       { title: 'Rapid Iteration', detail: 'Fast turnaround builds using additive manufacturing, off-the-shelf components, and agile development practices.' },
       { title: 'Functional Validation', detail: 'Real-world testing of mechanical fit, electrical performance, control behavior, and user interaction.' },
@@ -136,6 +188,19 @@ export const services = [
     link: '/services/industrial-design',
     image: 'image3.png',
     detailedDescription: 'Great industrial design balances aesthetics, ergonomics, and engineering reality. We create product forms that communicate brand values, enhance user experience, and simplify manufacturing. Our designers work alongside engineers from day one, ensuring that visual concepts are grounded in mechanical feasibility and production economics. The result is cohesive products that look professional, feel intuitive, and can be manufactured efficiently at scale.',
+    processFlow: [
+      { step: 'Research & Insights', description: 'User research, market analysis, and brand discovery', duration: '1-2 weeks' },
+      { step: 'Concept Development', description: 'Sketching, ideation, and preliminary 3D concepts', duration: '2-3 weeks' },
+      { step: 'Refinement', description: 'Detailed CAD modeling, CMF selection, and engineering alignment', duration: '3-4 weeks' },
+      { step: 'Visualization', description: 'Photorealistic renders and appearance prototypes', duration: '1-2 weeks' },
+      { step: 'Production Support', description: 'Surface modeling, tooling review, and manufacturing coordination', duration: '2-3 weeks' },
+    ],
+    stats: [
+      { label: 'Design Awards', value: '12+' },
+      { label: 'User Satisfaction', value: '4.9/5' },
+      { label: 'Manufacturing Cost', value: '-25%' },
+      { label: 'Time to Market', value: '-20%' },
+    ],
     keyFeatures: [
       { title: 'User-Centered Design', detail: 'Ergonomic analysis, interaction design, and accessibility considerations to create intuitive, comfortable products.' },
       { title: 'Brand Alignment', detail: 'Form language, color palette, and material choices that reinforce your brand identity and market positioning.' },
@@ -168,6 +233,19 @@ export const services = [
     link: '/services/production-management',
     image: 'image2.png',
     detailedDescription: 'Moving from prototype to production requires careful coordination of suppliers, tooling, quality systems, and logistics. We manage this transition seamlessly, leveraging our manufacturing network and quality expertise to deliver products that meet your specifications on time and on budget. Our team handles supplier selection, tooling oversight, pilot builds, validation, and ongoing production support—ensuring consistent quality as you scale from hundreds to thousands of units.',
+    processFlow: [
+      { step: 'Supplier Selection', description: 'Qualify vendors and negotiate pricing for components and assembly', duration: '2-3 weeks' },
+      { step: 'Tooling Development', description: 'Design and validate injection molds, fixtures, and test jigs', duration: '6-10 weeks' },
+      { step: 'Pilot Production', description: 'Small batch builds to validate process and quality systems', duration: '2-4 weeks' },
+      { step: 'Validation & Certification', description: 'Full product testing, compliance verification, and documentation', duration: '3-5 weeks' },
+      { step: 'Volume Production', description: 'Scale to full production with continuous monitoring and improvement', duration: 'Ongoing' },
+    ],
+    stats: [
+      { label: 'Units Produced', value: '50K+' },
+      { label: 'Quality Yield', value: '99.2%' },
+      { label: 'On-Time Delivery', value: '96%' },
+      { label: 'Cost Savings', value: '18%' },
+    ],
     keyFeatures: [
       { title: 'Supplier Network Management', detail: 'Qualified vendor selection for PCB fabrication, assembly, machining, molding, and finishing operations.' },
       { title: 'Tooling Development', detail: 'Oversight of injection molds, fixtures, test jigs, and production tooling to ensure first-article quality.' },

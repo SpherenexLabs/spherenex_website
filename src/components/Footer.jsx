@@ -14,7 +14,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <img src={logo} alt="Spherenex" className="footer-logo" loading="eager" fetchPriority="high" />
-          <p className="footer-tagline">Professional smart technology services—software, hardware, prototyping, and production. Based in Austin, serving clients globally.</p>
+          <p className="footer-tagline">Professional smart technology services—software, hardware, prototyping, and production. Based in India.</p>
           
           <div className="footer-social">
             <a 
@@ -46,15 +46,15 @@ function Footer() {
           <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
                 <div className="footer-contact">
-          <a href="mailto:connects@spherenex.com" className="footer-link">
+          <a href="mailto:connect@spherenex.com" className="footer-link">
             <Mail size={18} />
-            connects@spherenex.com
+            connect@spherenex.com
           </a>
           {/* <a href="tel:+918861938913" className="footer-link">
             <Phone size={18} />
             +91 8861938913
           </a> */}
-          <a className="ghost" href="mailto:connects@spherenex.com?subject=Spherenex%20Deck%20Request">
+          <a className="ghost" href="mailto:connect@spherenex.com?subject=Spherenex%20Deck%20Request">
             <Download size={18} />
             Download deck
           </a>
@@ -62,7 +62,7 @@ function Footer() {
       </div>
       
       <div className="footer-copyright">
-        <p>© 2025 Spherenex A Unit of NexSpyder Technologies Pvt. Ltd.</p>
+        <p>© 2025 Spherenex A Unit of Nexspyder Technologies Pvt. Ltd.</p>
         <p>All rights reserved.</p>
       </div>
     </footer>

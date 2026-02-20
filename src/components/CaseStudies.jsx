@@ -12,7 +12,7 @@ function CaseStudies() {
             Let's discuss how our services can bring your vision to life. Schedule a free consultation with our engineering team.
           </p>
           <div className="cta-buttons">
-            <a className="solid large" href="#contact">
+            <a className="solid large" href="/support">
               Get Started
               <ArrowRight size={20} />
             </a>
